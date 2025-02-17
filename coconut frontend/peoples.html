@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoConuT App - Peoples</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav-link {
+            font-size: 18px;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #ffc107 !important;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+        .container-table {
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            text-align: center;
+        }
+    </style>
+    
+<script type="text/javascript"  src="script.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="coconut.jpg" > CoConuT
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="peoples.html">Peoples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="markets.html">Markets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Peoples Details Table -->
+<div class="container-table">
+    <h2 class="text-center">Peoples Details</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>District</th>
+            </tr>
+        </thead>
+        <tbody id="getpeoples">
+           
+        </tbody>
+    </table>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="mb-0">CoConuT App &copy; 2025</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
